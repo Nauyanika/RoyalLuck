@@ -18,7 +18,7 @@ var pool = mysql.createPool({
  password: "",
  port:3308,
 
-  database: "bigwinner",
+  database: "royalluck",
   // host: "localhost",
   // user: "root",
   // password: "",

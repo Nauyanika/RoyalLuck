@@ -2,7 +2,7 @@ const bcrypt = require('bcrypt');
 // const check = require('../validation/CheckValidation') 
 const conn = require('../config/db')
 const moment = require('moment'); 
-// const {authToken} =require('../middleware/getToken')
+ //const {authToken} =require('../middleware/getToken')
  //User login 
 var nodemailer = require('nodemailer');
 const e = require('express');
@@ -54,7 +54,8 @@ const authLogin = async (req, res) => {
                 status: statusCode,
                 message,
                 user: data,
-                errors: error
+                errors: error,
+                token:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJyb2xlIjoiU3VwZXIgQWRtaW4iLCJyb2xlX2lkIjoxLCJhZG1pbl9pZCI6MSwiaWF0IjoxNjUzMTMwNDMwLCJleHAiOjE2NTMxMzQwMzB9.hU41Zvx5uoaI7Nt46LaL8GFjTjAXUnet6GKhc5Ku4TA",
             }
             res.send(responseData)
         
